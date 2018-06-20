@@ -52,7 +52,7 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 再把上面所有程式碼刪除
 
-複製貼上[YzuDormFlowAlertor.gs](/YzuDormFlowAlertor.gs)的程式碼
+複製貼上[YzuDormFlowAlertor.gs](/YzuDormFlowAlertor(Line).gs)的程式碼
 
 ### 修改第2行~第5行
 
