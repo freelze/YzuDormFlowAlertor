@@ -5,7 +5,7 @@
 
 不需要安裝任何東西
 
-只需要一個Google帳號和Line的帳號
+只需要一個 Google帳號 和 Line的帳號(或是Telegram)
 
 P.S.如果你覺得步驟太繁瑣，加上你有安裝Python
 
@@ -52,7 +52,7 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 再把上面所有程式碼刪除
 
-複製貼上[YzuDormFlowAlertor.gs](/YzuDormFlowAlertor(Line).gs)的程式碼
+複製貼上[YzuDormFlowAlertor(Line).gs](/YzuDormFlowAlertor(Line).gs)的程式碼
 
 ### 修改第2行~第5行
 
