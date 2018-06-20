@@ -1,7 +1,7 @@
 // reference:https://stackoverflow.com/questions/21621019/google-apps-script-login-to-website-with-http-request, https://gist.github.com/erajanraja24/02279e405e28311f220f557156363d7b
 var student_id = '帳號'
 var password = '密碼'
-var LineNotifyToken = 你的LINE Token""
+var LineNotifyToken = "你的LINE Token"
 var sheetID = "Google試算表ID"
 
 function DataflowReminder() {
