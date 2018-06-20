@@ -7,6 +7,10 @@
 
 只需要一個Google帳號和Line的帳號
 
+如果你覺得步驟太繁瑣，加上你有安裝Python
+
+你可以使用這個[簡單版](https://gist.github.com/freelze/a915d31c98156827727cc4677e140207)
+
 # 設置作業
 ## 1.
 到[Line Notify的官方網站](https://notify-bot.line.me/zh_TW/)取得token
