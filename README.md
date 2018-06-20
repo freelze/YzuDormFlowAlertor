@@ -75,7 +75,7 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 ### 部屬
 
-再來要 發佈 -> 部屬為網路應用程式
+發佈 -> 部屬為網路應用程式
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Deploy.png)
 
@@ -85,7 +85,7 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 可能會出現下面這個畫面
 
-就先點 "進階" , 再點 "前往[XXX](不安全)"
+就先點 "進階" , 再點 "前往\[](不安全)"
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/9.png)
 
@@ -93,7 +93,7 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 ### 設定定時觸發器
 
-接著在點擊畫面上方的小時鐘
+點擊畫面上方的小時鐘
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler.png)
 
