@@ -32,6 +32,8 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 搜尋Google Apps Script , 按下"新增"
 
+再一次 滑鼠右鍵 -> 更多 -> Google Apps Script
+
 就會出現下面的畫面
 
 再把上面所有程式碼刪除
@@ -64,6 +66,8 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 選擇"版本"7後,按下"儲存"
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/4.png)
+
+
 
 接著在點擊畫面上方的小時鐘
 
