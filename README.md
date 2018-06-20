@@ -3,6 +3,10 @@
 
 當流量到達2G,3G時會發出Line通知
 
+不需要安裝任何東西
+
+只需要一個Google帳號和Line的帳號
+
 # 設置作業
 ## 1.
 到[Line Notify的官方網站](https://notify-bot.line.me/zh_TW/)取得token
