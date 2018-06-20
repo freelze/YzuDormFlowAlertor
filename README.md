@@ -46,8 +46,8 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 複製貼上YzuDormFlowAlertor.gs的程式碼
 
-### 第2行~第5行需要更改
----------------------------------------
+第2行~第5行需要更改
+
 ##### 第2行換成你的元智Portal帳號
 
 ##### 第3行是元智Portal密碼
@@ -55,9 +55,9 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 ##### 第4行是第一步時取得的LINE token
 
 ##### 第5行是第二步時取得的試算表的ID
----------------------------------------
 
-再來要匯入程式庫
+
+### 匯入程式庫
 
 點擊 資源 -> 程式庫
 
@@ -70,6 +70,8 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/3.png)
 
 選擇"版本"7後,按下"儲存"
+
+### 部屬
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/4.png)
 
@@ -87,7 +89,9 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/9.png)
 
+之後就是一直點允許
 
+### 設定定時觸發器
 
 接著在點擊畫面上方的小時鐘
 
