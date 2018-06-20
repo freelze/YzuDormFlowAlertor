@@ -71,9 +71,9 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 選擇"版本"7後,按下"儲存"
 
-### 部屬
-
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/4.png)
+
+### 部屬
 
 再來要 發佈 -> 部屬為網路應用程式
 
