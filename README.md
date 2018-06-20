@@ -49,5 +49,5 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 ### 第5行是第二步時取得的試算表的ID
 
 接著在典籍點擊畫面上方的小時鐘
-https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler.png
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler.png)
     
