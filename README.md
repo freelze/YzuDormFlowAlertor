@@ -8,6 +8,7 @@
 ([教學](http://pythonorz.blogspot.com/2017/12/python-line-notify-line-notify-line.html))
 ### 2.
 到你的[Google雲端硬碟](https://drive.google.com/)裡,
+
 滑鼠右鍵 -> 更多 -> 連接更多應用程式
 搜尋Google Apps Script , 按下"新增"
 就會出現下面的畫面
