@@ -51,15 +51,18 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 再來要匯入程式庫
 
-點擊 資源 -> 函式庫
+點擊 資源 -> 程式庫
+
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/2.png)
 
 貼上 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV 後
 
 按下"新增"
+
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/3.png)
 
 選擇"版本"7後,按下"儲存"
+
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/4.png)
 
 接著在點擊畫面上方的小時鐘
