@@ -14,5 +14,6 @@
 就會出現下面的畫面
 
 再把上面所有程式碼刪除
+
 複製貼上YzuDormFlowAlertor.gs的程式碼
 
