@@ -54,7 +54,7 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 複製貼上[YzuDormFlowAlertor.gs](/YzuDormFlowAlertor.gs)的程式碼
 
-第2行~第5行需要更改
+### 修改第2行~第5行
 
 > 第2行換成你的元智Portal帳號
 
