@@ -9,7 +9,7 @@
 
 P.S.如果你覺得步驟太繁瑣，加上你有安裝Python
 
-你可以使用這個[簡單版](https://gist.github.com/freelze/8727a16f020baf98fd6ab02cc9c23731)
+你可以使用這個[非線上的簡單版](https://gist.github.com/freelze/8727a16f020baf98fd6ab02cc9c23731)
 
 # 設置作業
 ## 1.
