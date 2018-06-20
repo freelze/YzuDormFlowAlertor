@@ -46,15 +46,15 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 複製貼上[YzuDormFlowAlertor.gs](/YzuDormFlowAlertor.gs)的程式碼
 
->第2行~第5行需要更改
+第2行~第5行需要更改
 
->> 第2行換成你的元智Portal帳號
+> 第2行換成你的元智Portal帳號
 
->> 第3行是元智Portal密碼
+> 第3行是元智Portal密碼
 
->> 第4行是第一步時取得的LINE token
+> 第4行是第一步時取得的LINE token
 
->> 第5行是第二步時取得的試算表的ID
+> 第5行是第二步時取得的試算表的ID
 
 
 ### 匯入程式庫
