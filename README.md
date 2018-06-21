@@ -109,6 +109,6 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 並調整至下方的情況
 
-![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler_2.png)
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler_2_.png)
 
 這樣就大功告成了!
