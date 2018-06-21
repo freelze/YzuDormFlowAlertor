@@ -20,10 +20,6 @@ P.S.如果你覺得步驟太繁瑣，加上你有安裝Python
 
 右鍵新增 -> Google 試算表
 
-將第一行第一列的值改成0
-
-![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/excel.png)
-
 將這個試算表的網址複製
 
 貼到你的記事本
