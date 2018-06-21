@@ -111,4 +111,4 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler_2_.png)
 
-這樣就大功告成了!
+按下儲存後就大功告成了!
