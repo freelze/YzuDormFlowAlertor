@@ -51,6 +51,8 @@ function DataflowReminder() {
   
   var SpreadSheet = SpreadsheetApp.openById(sheetID);
   var Sheet = SpreadSheet.getSheetByName("工作表1");
+  if(Sheet.getRange(1, 1).isBlank())
+    Sheet.getRange(1, 1).setValue(0);
   var count_LineNotify = Sheet.getRange(1, 1).getValue();
   
   Logger.log(count_LineNotify);
