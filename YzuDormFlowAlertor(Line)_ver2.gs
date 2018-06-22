@@ -1,15 +1,19 @@
-// 需要跑1.5~2分鐘
-// Need to import parse library (資源 -> 程式庫 -> 新增 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV -> 版本7 -> 儲存)
-// Open Drive API (資源 -> 進階Google服務 -> 開啟Drive API)
+/*
+ *  在Google雲端的根目錄 , 建立一個資料夾命名為 GAS
+ *  新建一個 Google Apps Script , 複製貼上這裡所有的程式碼
+ *  Need to import parse library (資源 -> 程式庫 -> 新增 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV -> 選擇"版本"7 -> 儲存)
+ *  Open Drive API (資源 -> 進階Google服務 -> 開啟Drive API)
+ *  需要跑1.5~2分鐘
+ */
 
-var student_id = '帳號'
-var password = '密碼'
+var student_id = '你的帳號'
+var password = '你的密碼'
 var LineNotifyToken = "你的LINE Token"
 
-// reference:https://stackoverflow.com/questions/21621019/google-apps-script-login-to-website-with-http-request, https://gist.github.com/erajanraja24/02279e405e28311f220f557156363d7b
-// GAS:https://developers.google.com/apps-script/reference/script/trigger-builder#forSpreadsheet(String)
-// https://developers.google.com/apps-script/reference/script/clock-trigger-builder#everyDays(Integer)
-// triggerID:https://stackoverflow.com/questions/39057177/google-app-script-trigger-id-format
+/* reference:https://stackoverflow.com/questions/21621019/google-apps-script-login-to-website-with-http-request, https://gist.github.com/erajanraja24/02279e405e28311f220f557156363d7b
+   GAS:https://developers.google.com/apps-script/reference/script/trigger-builder#forSpreadsheet(String)
+   https://developers.google.com/apps-script/reference/script/clock-trigger-builder#everyDays(Integer)
+   triggerID:https://stackoverflow.com/questions/39057177/google-app-script-trigger-id-format */
 
 /////////
 // 主程式
