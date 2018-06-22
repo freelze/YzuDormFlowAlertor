@@ -61,7 +61,7 @@ https://docs.google.com/spreadsheets/d/....................................../ed
 > 第5行是第二步時取得的試算表的ID
 
 
-### 匯入程式庫
+### 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
 
 點擊 資源 -> 程式庫
 
