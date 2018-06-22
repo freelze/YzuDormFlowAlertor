@@ -154,7 +154,7 @@ function resetCount_LineNotify()
   Sheet.getRange(1, 1).setValue(0);
 }
 ////////////////////////////////////////////////////////
-// trigger for resetCount_LineNotify() 定時:每天凌晨三點
+// 重置已發訊息量的trigger (定時:每天凌晨三點)
 ///////////////////////////////////////////////////////
 function resetCount_LineNotifyTriggers() {
   // Trigger every Minute at 3 o'clock
