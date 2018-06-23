@@ -134,9 +134,7 @@ function DataflowReminder() {
   catch (err) {
   // 用於處理例外的陳述式
     Logger.log("Error: " + err);
-  }
-  finally {
-    //killAllTriggers();
+    killAllTriggers();
   }
 }
 ///////////////////
