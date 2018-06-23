@@ -136,7 +136,7 @@ function DataflowReminder() {
     Logger.log("Error: " + err);
   }
   finally {
-    killAllTriggers();
+    //killAllTriggers();
   }
 }
 ///////////////////
