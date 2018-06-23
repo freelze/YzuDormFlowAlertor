@@ -138,7 +138,7 @@ function DataflowReminderTriggers() {
   Sheet.getRange(2, 1).setValue(cID);
 }
 //////////////////////////////////////
-// 爬流量的Trigger的Trigger(每天八點)
+// 爬流量的Trigger的Trigger(每天8AM)
 //////////////////////////////////////
 function dailyDataflowReminderTriggers() {
   // Trigger when the users execute this code
@@ -158,14 +158,14 @@ function resetCount_LineNotify()
   Sheet.getRange(1, 1).setValue(0);
 }
 ////////////////////////////////////////////////////////
-// 重置已發訊息量的trigger (定時:每天凌晨三點)
+// 重置已發訊息量的trigger (定時:每天8AM)
 ///////////////////////////////////////////////////////
 function resetCount_LineNotifyTriggers() {
-  // Trigger every Minute at 3 o'clock
+  // Trigger every Minute at 8 o'clock
   ScriptApp.newTrigger('resetCount_LineNotify')
       .timeBased()
       .inTimezone("Asia/Taipei") // http://joda-time.sourceforge.net/timezones.html
-      .atHour(3)
+      .atHour(8)
       .everyDays(1)
       .create();
 }
