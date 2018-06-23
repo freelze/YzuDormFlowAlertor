@@ -111,6 +111,6 @@
 
 如果你有安裝Python
 
-可以使用這個 [非線上的簡單版](https://gist.github.com/freelze/8727a16f020baf98fd6ab02cc9c23731)
+可以使用這個 [非線上版](https://gist.github.com/freelze/8727a16f020baf98fd6ab02cc9c23731)
 
 每兩秒抓一次流量
