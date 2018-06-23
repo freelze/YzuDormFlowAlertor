@@ -80,7 +80,9 @@
 
 執行Start函式
 
-需要等候1.5~2分鐘
+它這時會要你授權，就是點自己的Google帳號 -> 允許
+
+接著讓它跑1.5~2分鐘
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Start.png)
 
