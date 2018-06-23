@@ -22,7 +22,13 @@
 
 滑鼠右鍵 -> 更多 -> 連接更多應用程式
 
-搜尋Google Apps Script , 按下"新增"
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/%E9%80%A3%E6%8E%A5%E6%9B%B4%E5%A4%9A%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.png)
+
+在"搜尋應用程式"的欄位貼上 Google Apps Script , 按下"enter"
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/search.png)
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/%E9%80%A3%E6%8E%A5.png)
 
 再一次 滑鼠右鍵 -> 更多 -> Google Apps Script
 
