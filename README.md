@@ -14,7 +14,7 @@
 
 ### 提醒畫面 & 指令/data即時查詢 ( Telegram )
 
-![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TG_data2.jpg)
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TG_dataSmall.jpg)
 
 # 一. 設置作業
 
