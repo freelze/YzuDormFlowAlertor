@@ -93,3 +93,9 @@
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TriggersList.png)
 
 如果有那就大功告成囉!
+
+之後就可以不用管它
+
+它每天都會幫你查看流量
+
+等畢業之後再把它刪掉
