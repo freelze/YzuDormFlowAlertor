@@ -210,11 +210,9 @@ function deleteCertainTimeDrivenTriggers() {
   var allTriggers = ScriptApp.getProjectTriggers();
   for (var i = 0; i < allTriggers.length; i++) {
     if (allTriggers[i].getUniqueId() == cID) {
-      Logger.log("Delete");
       ScriptApp.deleteTrigger(allTriggers[i]);
     }
     if (allTriggers[i].getUniqueId() == cID2) {
-      Logger.log("Delete");
       ScriptApp.deleteTrigger(allTriggers[i]);
     }
   }
@@ -278,7 +276,6 @@ function openSpreadsheetByName(){
     if (file.getName() == "DataAlertor_DB_")
     {
       var fileID = file.getId();
-      Logger.log(fileID);
       return fileID;
     }    
   }
