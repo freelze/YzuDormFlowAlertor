@@ -114,6 +114,49 @@ function scrapeDataflow(){
     return false;
   }
 }
+// 剩下多少上網時間 ( 兩點斷網的情況 )
+function getRestTime(){
+  var time = new Date();
+  var restTime;
+    //Logger.log(time.getHours());
+    //Logger.log(time.getMinutes());
+  switch(time.getHours()){
+      case(2):
+      case(3):
+      case(4):
+      case(5):
+      case(6):
+      case(7):
+        Logger.log("DormNetdisconnected");
+        break;
+      case(1):
+        var min = 60-time.getMinutes();
+        if(min == 60)
+          restTime = "1小時";
+        else
+          restTime = min + "分鐘";
+        break;
+      case(0):
+        var min = 60-time.getMinutes();
+        if(min == 60)
+          restTime = "2小時";
+        else
+          restTime = "1小時" + min + "分鐘";
+        break;
+      default:
+        var min = 60-time.getMinutes();
+        if(min == 60){
+          var hour = 26-time.getHours();
+          restTime = hour+"小時";
+        }
+        else{
+          var hour = 25-time.getHours();
+          restTime = hour + "小時" + min + "分鐘";
+        }
+        break;
+    }
+  return restTime;
+}
 //////////////
 // 爬取宿網流量
 //////////////
@@ -125,26 +168,25 @@ function DataflowReminder() {
   var upload = Dataflow_dict.upload;
   var download = Dataflow_dict.download;
   var available = 4096-parseInt(Dataflow_M);
-  //var sheetID = create();
   var SpreadSheet = SpreadsheetApp.openById(openSpreadsheetByName());
   var Sheet = SpreadSheet.getSheetByName("工作表1");
   if(Sheet.getRange(1, 1).isBlank())
     Sheet.getRange(1, 1).setValue(0);
   var count_LineNotify = Sheet.getRange(1, 1).getValue();
-  
+  var restTime = getRestTime();
   if( parseInt(Dataflow_M) >= 1024 && count_LineNotify == 0 ) 
   {
-    sendtext("\n宿舍網路:\n您已經使用超過1GB\n您還剩 " + available + " MB 可用\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
+    sendtext("\n宿舍網路:\n您已經使用超過1GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
     Sheet.getRange(1, 1).setValue(1);
   }
   else if( parseInt(Dataflow_M) >= 2048 && count_LineNotify == 1 ) // 2048 MB
   {
-    sendtext("\n宿舍網路:\n您已經使用超過2GB\n您還剩 " + available + " MB 可用\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
+    sendtext("\n宿舍網路:\n您已經使用超過2GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
     Sheet.getRange(1, 1).setValue(2);
   }
   else if( parseInt(Dataflow_M) >= 3072 && count_LineNotify == 2 ) // 3072 MB
   {
-    sendtext("\n宿舍網路:\n您已經使用超過3GB\n您還剩 " + available + " MB 可用\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
+    sendtext("\n宿舍網路:\n您已經使用超過3GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
     Sheet.getRange(1, 1).setValue(3);
   }
   else if( parseInt(Dataflow_M) >= 4096 && count_LineNotify == 3 )
