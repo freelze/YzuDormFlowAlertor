@@ -10,7 +10,7 @@
 
 ### 提醒畫面 ( Line )
 
-![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE.jpg)
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_detail.jpg)
 
 # 一. 設置作業
 
