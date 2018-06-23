@@ -8,7 +8,7 @@
 
 只需要一個 Google帳號 和 Line的帳號(或是Telegram)
 
-# 設置作業
+# 一. 設置作業
 
 ## 1.
 
@@ -70,7 +70,7 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/DriveAPI.png)
 
-# 執行
+# 二. 執行
 
 執行Start函式
 
