@@ -23,7 +23,13 @@
 
 到你的Google雲端硬碟
 
-滑鼠右鍵 -> 更多 -> 連接更多應用程式
+在根目錄裡新增一個資料夾，並命名為 GAS 
+
+進去GAS資料夾內
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/GAS_loc.png)
+
+點滑鼠右鍵 -> 更多 -> 連接更多應用程式
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/%E9%80%A3%E6%8E%A5%E6%9B%B4%E5%A4%9A%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.png)
 
