@@ -8,6 +8,10 @@
 
 只需要一個 Google帳號 和 Line的帳號(或是Telegram)
 
+# 提醒畫面 (Line)
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE.jpg)
+
 # 一. 設置作業
 
 ## 1.
