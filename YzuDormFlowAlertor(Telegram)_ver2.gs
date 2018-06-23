@@ -6,10 +6,10 @@
 // Need to import parse library (資源 -> 程式庫 -> 新增 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV -> 版本7 -> 儲存)
 // Open Drive API (資源 -> 進階Google服務 -> 開啟Drive API)
 
-var student_id = '你的帳號'
-var password = '你的密碼'
-var id = "你的Telegram ID"
-var key = "你的Telegram Bot token"
+var student_id = ''
+var password = ''
+var id = ""
+var key = ""
 
 /////////
 // 主程式
@@ -89,11 +89,23 @@ function scrapeDataflow(){
 
   try {
     if(title.length == 13) throw "帳號或密碼錯誤,還是您並沒有住在宿舍?";
-    var regExp = /<font size=\"1\" color=\"red\"([\s\S]*?)<\/font>/gi;
-    var DataflowHTML = html.getContentText().match(regExp);
+    /*var regExp = /<font size=\"1\" color=\"red\"([\s\S]*?)<\/font>/gi;
+    var DataflowHTML = html.getContentText().match(regExp);*/
     var regExp = /\d+M/;
-    var Dataflow_M = DataflowHTML[1].match(regExp);
-    return Dataflow_M;
+    //var Dataflow_M = DataflowHTML[1].match(regExp);
+   
+    var regExp2 = /<font size=\"1\"([\s\S]*?)<\/font>/gi;
+    var DataflowHTML2 = html.getContentText().match(regExp2);
+    var download = DataflowHTML2[21].match(regExp);
+    var upload = DataflowHTML2[22].match(regExp);
+    var total = DataflowHTML2[24].match(regExp);
+    var data= {
+      download:download,
+      upload:upload,
+      total:total
+    }
+    Logger.log(data);
+    return data;
   }
   catch (err) {
   // 用於處理例外的陳述式
@@ -106,8 +118,12 @@ function scrapeDataflow(){
 // 爬取宿網流量
 //////////////
 function DataflowReminder() {
-  var Dataflow_M = scrapeDataflow();
-  if(Dataflow_M){
+  var Dataflow_dict = scrapeDataflow();
+
+  if(Dataflow_dict){
+  var Dataflow_M = Dataflow_dict.total;
+  var upload = Dataflow_dict.upload;
+  var download = Dataflow_dict.download;
   var available = 4096-parseInt(Dataflow_M);
   //var sheetID = create();
   var SpreadSheet = SpreadsheetApp.openById(openSpreadsheetByName());
@@ -116,24 +132,24 @@ function DataflowReminder() {
     Sheet.getRange(1, 1).setValue(0);
   var count_LineNotify = Sheet.getRange(1, 1).getValue();
   
-  if( parseInt(Dataflow_M) >= 0 && count_LineNotify == 0 ) 
+  if( parseInt(Dataflow_M) >= 1024 && count_LineNotify == 0 ) 
   {
-    sendtext("\n宿舍網路:\n您已經使用超過1GB\n您還剩" + available + "MB可用");
+    sendtext("\n宿舍網路:\n您已經使用超過1GB\n您還剩 " + available + " MB 可用\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
     Sheet.getRange(1, 1).setValue(1);
   }
   else if( parseInt(Dataflow_M) >= 2048 && count_LineNotify == 1 ) // 2048 MB
   {
-    sendtext("\n宿舍網路:\n您已經使用超過2GB\n您還剩" + available + "MB可用");
+    sendtext("\n宿舍網路:\n您已經使用超過2GB\n您還剩 " + available + " MB 可用\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
     Sheet.getRange(1, 1).setValue(2);
   }
   else if( parseInt(Dataflow_M) >= 3072 && count_LineNotify == 2 ) // 3072 MB
   {
-    sendtext("\n宿舍網路:\n您已經使用超過3GB\n您還剩" + available + "MB可用");
+    sendtext("\n宿舍網路:\n您已經使用超過3GB\n您還剩 " + available + " MB 可用\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
     Sheet.getRange(1, 1).setValue(3);
   }
   else if( parseInt(Dataflow_M) >= 4096 && count_LineNotify == 3 )
   {
-    sendtext("\n宿舍網路:\n斷網囉! 本日使用量:" + Dataflow_M);
+    sendtext("\n宿舍網路:\n斷網囉! 本日累積使用量:" + Dataflow_M + "\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
     Sheet.getRange(1, 1).setValue(4);
   }
   }
@@ -291,8 +307,11 @@ function doPost(e){
     if (msg.text == '/data'){
       var Dataflow_M = scrapeDataflow();
       if(Dataflow_M){
-        var available = 4096-parseInt(Dataflow_M);
-        var text = "\n宿舍網路:\n您已經使用 " + parseInt(Dataflow_M) + " MB\n您還剩 " + available + " MB可用";
+        var total = Dataflow_M.total;
+        var upload = Dataflow_M.upload;
+        var download = Dataflow_M.download;
+        var available = 4096-parseInt(total);
+        var text = "\n宿舍網路:\n您已經使用 " + parseInt(total) + " MB\n您還剩 " + available + " MB可用\n以下是統計資料:\n" + "上傳量: " + parseInt(upload)+ " MB\n下載量: " + parseInt(download) + " MB";
         sendtext(text);
       }
     }
