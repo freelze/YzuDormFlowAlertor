@@ -144,6 +144,7 @@ function dailyDataflowReminderTriggers() {
   // Trigger when the users execute this code
   var cID = ScriptApp.newTrigger('DataflowReminderTriggers')
       .timeBased()
+      .inTimezone("Asia/Taipei") // http://joda-time.sourceforge.net/timezones.html
       .atHour(8)
       .everyDays(1)
       .create();
