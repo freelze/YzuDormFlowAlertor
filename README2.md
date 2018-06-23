@@ -68,6 +68,8 @@
 
 資源 -> 進階Google服務 -> 開啟Drive API
 
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/resouce_googleServie.png)
+
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/DriveAPI.png)
 
 # 二. 執行
