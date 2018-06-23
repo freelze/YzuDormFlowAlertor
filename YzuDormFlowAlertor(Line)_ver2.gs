@@ -113,7 +113,6 @@ function DataflowReminder() {
   {
     lineNotify(LineNotifyToken, "\n宿舍網路:\n您已經使用超過1GB\n您還剩" + available + "MB可用");
     Sheet.getRange(1, 1).setValue(1);
-    Logger.log(count_LineNotify);
   }
   else if( parseInt(Dataflow_M) >= 2048 && count_LineNotify == 1 ) // 2048 MB
   {
@@ -205,7 +204,6 @@ function deleteCertainTimeDrivenTriggers() {
   var Sheet = SpreadSheet.getSheetByName("工作表1");
   var cID = Sheet.getRange(2,1).getValue();
   var cID2 = Sheet.getRange(3,1).getValue();
-  Logger.log(cID);
   // Loop over all triggers
   var allTriggers = ScriptApp.getProjectTriggers();
   for (var i = 0; i < allTriggers.length; i++) {
@@ -245,7 +243,6 @@ function createSpreadsheets(folderId) {
   var df = DriveApp.getFolderById(folderId);
   var newSS = SpreadsheetApp.create('DataAlertor_DB_');
   var driveFile = DriveApp.getFileById(newSS.getId());
-  //Logger.log(newSS.getId());
   df.addFile(driveFile);
   DriveApp.removeFile(driveFile);
   return true;
