@@ -8,11 +8,11 @@
 
 只需要一個 Google帳號 和 Line的帳號(或是Telegram)
 
-### 提醒畫面 ( Line )
+### Line 提醒畫面
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_detail.jpg)
 
-### 提醒畫面 & 指令/data即時查詢 ( Telegram )
+### Telegram 提醒畫面 & 指令/data即時查詢
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TG_dataSmall.jpg)
 
