@@ -85,13 +85,19 @@
 
 執行Start函式
 
-它這時會要你授權，就是點自己的Google帳號 -> 允許
-
-接著讓它跑1.5~2分鐘
-
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Start.png)
 
-完成後點擊畫面上方的小時鐘
+它這時會出現「需要授權」訊息，點選【核對權限】
+
+接著點自己的Google帳號 -> 點選【允許】
+
+再來讓它跑1.5~2分鐘
+
+正在執行的小視窗不見後
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/%E6%AD%A3%E5%9C%A8%E5%9F%B7%E8%A1%8C.png)
+
+點擊畫面上方的小時鐘
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler.png)
 
