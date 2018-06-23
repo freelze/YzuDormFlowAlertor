@@ -47,7 +47,7 @@
 
 再把上面所有程式碼刪除
 
-複製貼上[YzuDormFlowAlertor(Line)_ver2.gs](/YzuDormFlowAlertor(Line)_V2.gs)的程式碼
+複製貼上[YzuDormFlowAlertor(Line)_V2.gs](/YzuDormFlowAlertor(Line)_V2.gs)的程式碼
 
 ### 修改第9行~第11行
 
