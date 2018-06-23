@@ -62,6 +62,8 @@
 
 資源 -> 進階Google服務 -> 開啟Drive API
 
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/DriveAPI.png)
+
 # 執行
 
 執行Start函式
@@ -74,7 +76,7 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler.png)
 
-查看是否有出現下面的4個觸發器
+查看是否有出現下面4個觸發器
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TriggersList.png)
 
