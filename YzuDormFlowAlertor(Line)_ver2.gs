@@ -1,7 +1,7 @@
 /*
  *  在Google雲端的根目錄 , 建立一個資料夾命名為 GAS
  *  新建一個 Google Apps Script , 複製貼上這裡所有的程式碼
- *  Need to import parse library (資源 -> 程式庫 -> 新增 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV -> 選擇"版本"7 -> 儲存)
+ *  Need to import "Parse" library (資源 -> 程式庫 -> 新增 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV -> 選擇"版本"7 -> 儲存)
  *  Open Drive API (資源 -> 進階Google服務 -> 開啟Drive API)
  *  需要跑1.5~2分鐘
  */
