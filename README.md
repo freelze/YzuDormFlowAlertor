@@ -97,7 +97,7 @@
 
 查看是否有出現下面4個觸發器
 
-![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TriggersList.png)
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/List_triggers.png)
 
 如果有那就大功告成囉!
 
