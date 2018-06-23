@@ -64,14 +64,18 @@
 
 # 執行
 
-執行Start
+執行Start函式
 
 需要等候1.5~2分鐘
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Start.png)
 
 完成後點擊畫面上方的小時鐘
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler.png)
 
-是否有出現下面的4個觸發器
+查看是否有出現下面的4個觸發器
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TriggersList.png)
 
 如果有那就大功告成囉!
