@@ -59,7 +59,7 @@
 
 > 第6行是元智Portal密碼
 
-> 第7行是第一步時取得的LINE token
+> 第7行是第一步時取得的LINE 權杖token
 
 ### 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
 
