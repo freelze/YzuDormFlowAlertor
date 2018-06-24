@@ -22,7 +22,7 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_demo.jpg)
 
-### Telegram 提醒畫面 & 指令/data即時查詢
+### Telegram 提醒畫面 & 利用指令/data即時查詢
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TG_detail_2.jpg)
 
