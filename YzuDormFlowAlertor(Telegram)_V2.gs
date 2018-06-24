@@ -1,11 +1,13 @@
+// 需要跑1.5~2分鐘
 // Need to import parse library (資源 -> 程式庫 -> 新增 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV -> 版本7 -> 儲存)
 // Open Drive API (資源 -> 進階Google服務 -> 開啟Drive API)
-// 需要跑1.5~2分鐘
 
 var student_id = ''
 var password = ''
-var id = ""
-var key = ""
+var id = ''
+var key = ''
+
+// 記得setwebhook https://api.telegram.org/botKEY/setWebhook?url=https://...
 
 // reference:https://stackoverflow.com/questions/21621019/google-apps-script-login-to-website-with-http-request, https://gist.github.com/erajanraja24/02279e405e28311f220f557156363d7b
 // GAS ref:https://developers.google.com/apps-script/reference/script/trigger-builder#forSpreadsheet(String)
@@ -105,7 +107,7 @@ function scrapeDataflow(){
       upload:upload,
       total:total
     }
-    Logger.log(data);
+    //Logger.log(data);
     return data;
   }
   catch (err) {
@@ -128,6 +130,7 @@ function getRestTime(){
       case(5):
       case(6):
       case(7):
+        return false;
         Logger.log("DormNetdisconnected");
         break;
       case(1):
@@ -177,26 +180,25 @@ function DataflowReminder() {
   var restTime = getRestTime();
   if( parseInt(Dataflow_M) >= 1024 && count_LineNotify == 0 ) 
   {
-    sendtext("\n宿舍網路:\n您已經使用超過1GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
+    sendtext("\n宿舍網路:\n\n您已經使用超過1GB\n您還剩 " + available + " MB (" + parseInt(available/4096*100) + "%) 可用\n離凌晨兩點還有: "+restTime+"\n\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(Dataflow_M) + " MB");
     Sheet.getRange(1, 1).setValue(1);
-  }
+  } 
   else if( parseInt(Dataflow_M) >= 2048 && count_LineNotify == 1 ) // 2048 MB
   {
-    sendtext("\n宿舍網路:\n您已經使用超過2GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
+     sendtext("\n宿舍網路:\n\n您已經使用超過2GB\n您還剩 " + available + " MB (" + parseInt(available/4096*100) + "%) 可用\n離凌晨兩點還有: "+restTime+"\n\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(Dataflow_M) + " MB");
     Sheet.getRange(1, 1).setValue(2);
   }
   else if( parseInt(Dataflow_M) >= 3072 && count_LineNotify == 2 ) // 3072 MB
   {
-    sendtext("\n宿舍網路:\n您已經使用超過3GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
+     sendtext("\n宿舍網路:\n\n您已經使用超過3GB\n您還剩 " + available + " MB (" + parseInt(available/4096*100) + "%) 可用\n離凌晨兩點還有: "+restTime+"\n\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(Dataflow_M) + " MB");
     Sheet.getRange(1, 1).setValue(3);
   }
   else if( parseInt(Dataflow_M) >= 4096 && count_LineNotify == 3 )
   {
-    sendtext("\n宿舍網路:\n斷網囉! 本日累積使用量:" + Dataflow_M + "\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
+    sendtext("\n宿舍網路:\n\n斷網囉!" + "\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(Dataflow_M) + " MB");
     Sheet.getRange(1, 1).setValue(4);
   }
-  }
-  
+  }  
 }
 ///////////////////
 // 刪除所有Triggers
@@ -207,9 +209,9 @@ function killAllTriggers(){
     ScriptApp.deleteTrigger(allTriggers[i]);
   }
 }
-///////////////////////////
+/////////////////////////
 // 爬流量的Trigger(每分鐘)
-///////////////////////////
+/////////////////////////
 function DataflowReminderTriggers() {
   // Trigger when the users execute this code
   var cID = ScriptApp.newTrigger('DataflowReminder')
@@ -303,7 +305,7 @@ function create(){
 function createSpreadsheets(folderId) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var df = DriveApp.getFolderById(folderId);
-  var newSS = SpreadsheetApp.create('DataAlertor_Telegram_DB');
+  var newSS = SpreadsheetApp.create('TG_DataAlertor_DB');
   var driveFile = DriveApp.getFileById(newSS.getId());
   df.addFile(driveFile);
   DriveApp.removeFile(driveFile);
@@ -328,11 +330,11 @@ function getFolderID(folderName)
 // https://stackoverflow.com/questions/14221264/open-google-docs-spreadsheet-by-name
 /////////////////////////////////////////////////////////////////////////////////////
 function openSpreadsheetByName(){
-  var FileIterator = DriveApp.getFilesByName("DataAlertor_Telegram_DB");
+  var FileIterator = DriveApp.getFilesByName("TG_DataAlertor_DB");
   while (FileIterator.hasNext())
   {
     var file = FileIterator.next();
-    if (file.getName() == "DataAlertor_Telegram_DB")
+    if (file.getName() == "TG_DataAlertor_DB")
     {
       var fileID = file.getId();
       return fileID;
@@ -354,7 +356,7 @@ function doPost(e){
         var upload = Dataflow_M.upload;
         var download = Dataflow_M.download;
         var available = 4096-parseInt(total);
-        var text = "\n宿舍網路:\n您已經使用 " + parseInt(total) + " MB\n您還剩 " + available + " MB可用\n以下是統計資料:\n" + "上傳量: " + parseInt(upload)+ " MB\n下載量: " + parseInt(download) + " MB";
+        var text = ("\n宿舍網路:\n\n您還剩 " + available + " MB (" + parseInt(available/4096*100) + "%) 可用\n離凌晨兩點還有: "+restTime+"\n\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(total) + " MB");
         sendtext(text);
       }
     }
