@@ -12,6 +12,12 @@
 
 自動發出Line通知至您的裝置
 
+如果你不再住宿或者畢業之後
+
+也不需要做任何處理
+
+它會自動停止
+
 ### Line 提醒畫面
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_demo.jpg)
@@ -117,15 +123,6 @@
 
 如果有那就大功告成囉!
 
-之後就可以不用管它
-
-它每天都會幫你查看流量
-
-如果你沒住學校宿舍或者畢業之後
-
-也不需要做任何處理
-
-因為我的程式已經把這情況寫進去了
 
 ## 給進階使用者 
 
