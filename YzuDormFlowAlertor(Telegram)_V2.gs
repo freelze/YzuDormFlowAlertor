@@ -1,13 +1,13 @@
-// 需要跑1.5~2分鐘
 // Need to import parse library (資源 -> 程式庫 -> 新增 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV -> 版本7 -> 儲存)
 // Open Drive API (資源 -> 進階Google服務 -> 開啟Drive API)
+// 需要跑1.5~2分鐘
 
 var student_id = ''
 var password = ''
-var id = ''
-var key = ''
+var id = "telegramUserID"
+var key = "telegramBOTkey"
 
-// 記得setwebhook https://api.telegram.org/botKEY/setWebhook?url=https://...
+// https://api.telegram.org/botKEY/setWebhook?url=
 
 // reference:https://stackoverflow.com/questions/21621019/google-apps-script-login-to-website-with-http-request, https://gist.github.com/erajanraja24/02279e405e28311f220f557156363d7b
 // GAS ref:https://developers.google.com/apps-script/reference/script/trigger-builder#forSpreadsheet(String)
@@ -107,7 +107,7 @@ function scrapeDataflow(){
       upload:upload,
       total:total
     }
-    //Logger.log(data);
+    Logger.log(data);
     return data;
   }
   catch (err) {
@@ -350,6 +350,7 @@ function doPost(e){
   if (update.hasOwnProperty('message')){
     var msg = update.message;
     if (msg.text == '/data'){
+      var restTime = getRestTime();
       var Dataflow_M = scrapeDataflow();
       if(Dataflow_M){
         var total = Dataflow_M.total;
