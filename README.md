@@ -53,13 +53,15 @@
 
 複製貼上[YzuDormFlowAlertor(Line)_V2.gs](/YzuDormFlowAlertor(Line)_V2.gs)的程式碼
 
-### 修改第9行~第11行
+### 修改第5行~第7行
 
-> 第9行換成你的元智Portal帳號
+請更改引號''裡面的文字，''請不要刪除
 
-> 第10行是元智Portal密碼
+> 第5行換成你的元智Portal帳號
 
-> 第11行是第一步時取得的LINE token
+> 第6行是元智Portal密碼
+
+> 第7行是第一步時取得的LINE token
 
 ### 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
 
