@@ -18,7 +18,7 @@
 
 ## 1.
 
-到[Line Notify的官方網站](https://notify-bot.line.me/zh_TW/)取得token
+到[Line Notify的官方網站](https://notify-bot.line.me/zh_TW/)取得權杖(token)
 ([教學](http://pythonorz.blogspot.com/2017/12/python-line-notify-line-notify-line.html))
 
 ## 2.
