@@ -15,8 +15,6 @@ var LineNotifyToken = "你的LINE Token"
 /////////
 function Start()
 {
-  var runtimeCountStart = new Date(); // 測速開始
-  
   if(create()){
     var time = new Date();
     switch(time.getHours())
@@ -41,7 +39,6 @@ function Start()
         break;
     }
   }
-  runtimeCountStop(runtimeCountStart); // 測速結束
 }
 function scrapeDataflow(){
   var content = UrlFetchApp.fetch("https://flowweb.yzu.edu.tw/register/activate.php").getContentText();
@@ -115,28 +112,12 @@ function scrapeDataflow(){
     return false;
   }
 }
-//////////////
-// 爬取宿網流量
-//////////////
-function DataflowReminder() {
-  var Dataflow_dict = scrapeDataflow();
-  
-  if(Dataflow_dict){
-  var Dataflow_M = Dataflow_dict.total;
-  var upload = Dataflow_dict.upload;
-  var download = Dataflow_dict.download;
-  var available = 4096-parseInt(Dataflow_M);
-  var SpreadSheet = SpreadsheetApp.openById(openSpreadsheetByName());
-  var Sheet = SpreadSheet.getSheetByName("工作表1");
-  if(Sheet.getRange(1, 1).isBlank())
-    Sheet.getRange(1, 1).setValue(0);
-  var count_LineNotify = Sheet.getRange(1, 1).getValue();
+function getRestTime(){
   var time = new Date();
   var restTime;
     //Logger.log(time.getHours());
     //Logger.log(time.getMinutes());
-  switch(time.getHours())
-    {
+  switch(time.getHours()){
       case(2):
       case(3):
       case(4):
@@ -171,28 +152,45 @@ function DataflowReminder() {
         }
         break;
     }
+  return restTime;
+}
+//////////////
+// 爬取宿網流量
+//////////////
+function DataflowReminder() {
+  var Dataflow_dict = scrapeDataflow();
+  
+  if(Dataflow_dict){
+  var Dataflow_M = Dataflow_dict.total;
+  var upload = Dataflow_dict.upload;
+  var download = Dataflow_dict.download;
+  var available = 4096-parseInt(Dataflow_M);
+  var SpreadSheet = SpreadsheetApp.openById(openSpreadsheetByName());
+  var Sheet = SpreadSheet.getSheetByName("工作表1");
+  if(Sheet.getRange(1, 1).isBlank())
+    Sheet.getRange(1, 1).setValue(0);
+  var count_LineNotify = Sheet.getRange(1, 1).getValue();
+    
+  var restTime = getRestTime();
     //Logger.log(restTime);
   if( parseInt(Dataflow_M) >= 1024 && count_LineNotify == 0 ) 
   {
-    lineNotify(LineNotifyToken, "\n宿舍網路:\n您已經使用超過1GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
+    lineNotify(LineNotifyToken, "\n宿舍網路:\n\n您已經使用超過1GB\n您還剩 " + available + " MB ("+ parseInt(available/4096*100) +"%) 可用\n離凌晨兩點還有: "+restTime+"\n\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(Dataflow_M) + " MB");
     Sheet.getRange(1, 1).setValue(1);
   }
   else if( parseInt(Dataflow_M) >= 2048 && count_LineNotify == 1 ) // 2048 MB
   {
-    lineNotify(LineNotifyToken,"\n宿舍網路:\n您已經使用超過2GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
-
+    lineNotify(LineNotifyToken, "\n宿舍網路:\n\n您已經使用超過2GB\n您還剩 " + available + " MB ("+ parseInt(available/4096*100) +"%) 可用\n離凌晨兩點還有: "+restTime+"\n\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(Dataflow_M) + " MB");
     Sheet.getRange(1, 1).setValue(2);
   }
   else if( parseInt(Dataflow_M) >= 3072 && count_LineNotify == 2 ) // 3072 MB
   {
-    lineNotify(LineNotifyToken, "\n宿舍網路:\n您已經使用超過3GB\n您還剩 " + available + " MB 可用\n寶貴的上網時間剩下: "+restTime+"\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
-
+    lineNotify(LineNotifyToken, "\n宿舍網路:\n\n您已經使用超過3GB\n您還剩 " + available + " MB ("+ parseInt(available/4096*100) +"%) 可用\n離凌晨兩點還有: "+restTime+"\n\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(Dataflow_M) + " MB");
     Sheet.getRange(1, 1).setValue(3);
   }
   else if( parseInt(Dataflow_M) >= 4096 && count_LineNotify == 3 )
   {
-    lineNotify(LineNotifyToken, "\n宿舍網路:\n斷網囉! 本日累積使用量:" + Dataflow_M + "\n以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB");
-
+    lineNotify(LineNotifyToken, "\n宿舍網路:\n\n斷網囉!\n" + "以下是統計資料:\n上傳量: " + parseInt(upload) + " MB\n下載量: " + parseInt(download) + " MB\n總累計量: " + parseInt(Dataflow_M) + " MB");
     Sheet.getRange(1, 1).setValue(4);
   }
   } 
@@ -356,39 +354,4 @@ function lineNotify(token, msg){
   }
   r = UrlFetchApp.fetch(url,options);
   return r.status_code
-}
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Keep track of Google Apps Script's total execution time
-// https://medium.com/@dkodr/how-to-keep-track-of-google-apps-scripts-total-execution-time-c46e9d1dfdef
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-function runtimeCountStop(start) {
-  var props = PropertiesService.getScriptProperties();
-  var currentRuntime = props.getProperty("runtimeCount");
-  var stop = new Date();
-  var newRuntime = Number(stop) - Number(start) + Number(currentRuntime);
-  var setRuntime = {
-    runtimeCount: newRuntime,
-  }
-  props.setProperties(setRuntime);
-
-}
-////////////////////////
-// 紀錄執行時間(單位:毫秒)
-////////////////////////
-function recordRuntime() {
- /* var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheetName = "Runtime";
-  try {
-    ss.setActiveSheet(ss.getSheetByName("Runtime"));
-  } catch (e) {
-    ss.insertSheet(sheetName);
-  }
-  var sheet = ss.getSheetByName("Runtime");*/
-  var props = PropertiesService.getScriptProperties();
-  var runtimeCount = props.getProperty("runtimeCount");
-  Logger.log(runtimeCount+"毫秒");
-  /*var recordTime = new Date();
-  sheet.appendRow([recordTime, runtimeCount]);
-  props.deleteProperty("runtimeCount");*/
-
 }
