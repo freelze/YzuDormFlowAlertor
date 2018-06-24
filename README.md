@@ -55,11 +55,11 @@
 
 請更改引號''裡面的文字，''請不要刪除
 
-> 第5行換成你的元智Portal帳號
+> 第5行 : 你的元智Portal帳號
 
-> 第6行是元智Portal密碼
+> 第6行 : 你的元智Portal密碼
 
-> 第7行是第一步時取得的LINE 權杖token
+> 第7行 : 第一步取得的 LINE權杖token
 
 ### 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
 
