@@ -2,7 +2,7 @@
 
 元智大學宿舍網路流量監控與提醒
 
-當流量到達1G,2G,3G時會發出Line通知
+當流量到達1G,2G,3G,4G時會發出Line通知
 
 不需要安裝任何東西
 
@@ -10,7 +10,7 @@
 
 ### Line 提醒畫面
 
-![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_detail.jpg)
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_demo.jpg)
 
 ### Telegram 提醒畫面 & 指令/data即時查詢
 
