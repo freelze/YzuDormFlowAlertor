@@ -1,5 +1,4 @@
-# 元智大學宿舍網路流量監控與提醒
-# YzuDormFlowAlertor
+# 元智大學宿舍網路流量監控與提醒 YzuDormFlowAlertor
 
 當流量到達1G,2G,3G,4G時會發出Line通知
 
