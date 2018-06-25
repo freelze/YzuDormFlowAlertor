@@ -151,7 +151,7 @@ Google Apps Script 最短只能每一分鐘觸發一次
 
 另外，Gsuite等級的帳號
 
-每天觸發器(Triggers)的總執行時間限制6小時 ( [扣打 quota](https://script.google.com/dashboard) )
+每天觸發器(Triggers)的總執行時間限制6小時 ( [扣打 quotas](https://script.google.com/dashboard) )
 
 這個程式一天大概會用到1小時12分鐘 \[ 計算方式: 4(sec) x 60 x 18 = 4320(sec) = 72(min) = 1h,12min ]
 
