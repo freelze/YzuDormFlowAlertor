@@ -62,7 +62,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/%E9%80%A3%E6%8E%A5%E6%9B%B4%E5%A4%9A%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.png)
 
-在`搜尋應用程式`的欄位貼上 `Google Apps Script` , 按下`enter`
+在`搜尋應用程式`的欄位貼上 `Google Apps Script` , 按下`Enter` -> `連接`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/search.png)
 
