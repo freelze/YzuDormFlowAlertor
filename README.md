@@ -145,7 +145,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 Google Apps Script 最短只能每一分鐘觸發一次
 
-如果你有安裝Python
+如果你有安裝 Python
 
 可以使用這個 [非線上版](https://gist.github.com/freelze/8727a16f020baf98fd6ab02cc9c23731)
 
