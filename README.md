@@ -23,7 +23,7 @@
 
 登入你的YZU Portal，
 
-點選 "GSuite帳號申請"，
+點選 `GSuite帳號申請`，
 
 並依說明申請，
 
@@ -31,7 +31,7 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Gsuite.png)
 
-• Line 提醒畫面
+*    Line 提醒畫面
 -----------------
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_demo.jpg)
 
@@ -45,30 +45,30 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ## 1.
 
-到[Line Notify的官方網站](https://notify-bot.line.me/zh_TW/)取得權杖token
+到[Line Notify的官方網站](https://notify-bot.line.me/zh_TW/)取得`權杖token`
 ([教學](http://pythonorz.blogspot.com/2017/12/python-line-notify-line-notify-line.html))
 
 ## 2.
 
 到你的Google雲端硬碟
 
-在根目錄裡新增一個資料夾，並命名為 GAS 
+在根目錄裡新增一個資料夾，並命名為 `GAS` 
 
 進去GAS資料夾內
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/GAS_loc.png)
 
-點滑鼠右鍵 -> 更多 -> 連接更多應用程式
+點`滑鼠右鍵` -> `更多` -> `連接更多應用程式`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/%E9%80%A3%E6%8E%A5%E6%9B%B4%E5%A4%9A%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.png)
 
-在"搜尋應用程式"的欄位貼上 Google Apps Script , 按下"enter"
+在`搜尋應用程式`的欄位貼上 `Google Apps Script` , 按下`enter`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/search.png)
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/%E9%80%A3%E6%8E%A5.png)
 
-再一次 滑鼠右鍵 -> 更多 -> Google Apps Script
+再一次 `滑鼠右鍵` -> `更多` -> `Google Apps Script`
 
 就會出現下面的畫面
 
@@ -96,17 +96,11 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 貼上 `M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV` 後
 
-貼上 &M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV 後
-
-<貼上 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV 後
-
-*貼上 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV 後
-
 按下"新增"
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/3.png)
 
-選擇"版本"7後,按下"儲存"
+選擇`版本`7後,按下`儲存`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/4.png)
 
@@ -120,7 +114,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 # 二. 執行
 
-執行Start函式
+執行`Start`函式
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Start.png)
 
