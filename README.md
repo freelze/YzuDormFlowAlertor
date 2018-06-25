@@ -1,5 +1,5 @@
 # 元智大學宿舍網路流量監控與提醒 ( YzuDormFlowAlertor )
-
+=========================================================
 不需要安裝任何東西，
 
 只需要一個 [Google Gsuite等級的帳號](https://github.com/freelze/YzuDormFlowAlertor/blob/master/README.md#%E5%85%83%E6%99%BA%E5%A4%A7%E5%AD%B8gsuite%E5%85%8D%E8%B2%BB%E7%94%B3%E8%AB%8B%E6%96%B9%E5%BC%8F) 和 Line的帳號(或是Telegram)，
@@ -18,8 +18,8 @@
 
 它會自動停止。
 
-### 元智大學Gsuite免費申請方式
--------------------------------
+## 元智大學Gsuite免費申請方式
+
 登入你的YZU Portal，
 
 點選 "GSuite帳號申請"，
@@ -30,11 +30,11 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Gsuite.png)
 
-### Line 提醒畫面
+### • Line 提醒畫面
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_demo.jpg)
 
-### Telegram 提醒畫面 & 利用指令/data即時查詢
+### • Telegram 提醒畫面 & 利用指令/data即時查詢
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TGDemo_photo_2018-06-24_23-06-01.jpg)
 
