@@ -153,7 +153,7 @@ Google Apps Script 最短只能每一分鐘觸發一次
 
 每天觸發器(Triggers)的總執行時間限制6小時 ( [扣打](https://script.google.com/dashboard) )
 
-這個程式一天大概會用到1小時12分鐘 ( 4(sec) x 60 x 18 = 4320(sec) = 72(min) = 1h,12min )
+這個程式一天大概會用到1小時12分鐘 \[ 4(sec) x 60 x 18 = 4320(sec) = 72(min) = 1h,12min ]
 
 而免費版Google帳號只提供1小時
 
