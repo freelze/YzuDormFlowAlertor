@@ -26,7 +26,7 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TGDemo_photo_2018-06-24_23-06-01.jpg)
 
-P.S. Telegram 目前沒有教學文，有興趣自行Google
+P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影片](https://youtu.be/On9yeMtG2Wg)
 
 # 一. 設置作業
 
