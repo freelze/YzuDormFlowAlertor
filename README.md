@@ -3,7 +3,7 @@
 
 不需要安裝任何東西，
 
-只需要一個 `Google GSuite`等級的帳號 和 `Line`的帳號(或是Telegram)，
+只需要一個 `Google GSuite` 等級的帳號 和 `Line` 的帳號(或是Telegram)，
 
 操作一點簡單的設定，
 
