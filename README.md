@@ -78,7 +78,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 複製貼上[YzuDormFlowAlertor(Line)_V2.gs](/YzuDormFlowAlertor(Line)_V2.gs)的程式碼
 
-### 修改第5行~第7行
+### • 修改第5行~第7行
 
 請更改引號`''`裡面的文字，`''`請不要刪除
 
@@ -88,7 +88,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
   > 第7行 : 第一步取得的 `LINE權杖token`
   
-### 更改檔案名稱
+### • 更改檔案名稱
 
 `檔案` -> ` 重新命名 `
 
@@ -98,7 +98,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/name.png)
 
-### 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
+### • 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
 
 點擊 `資源` -> `程式庫`
 
@@ -114,7 +114,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/4.png)
 
-### 開啟Drive API
+### • 開啟Drive API
 
 `資源` -> `進階Google服務` -> 開啟`Drive API` -> `確定`
 
