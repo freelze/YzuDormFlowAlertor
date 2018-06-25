@@ -94,13 +94,13 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/2.png)
 
-在新增函式庫貼上 `M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV` 後
+在新增程式庫貼上 `M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV` 後
 
 按下`新增`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/3.png)
 
-選擇`版本`7 後 -> 按下`儲存`
+選擇`版本` 7 後 -> 按下`儲存`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/4.png)
 
@@ -159,5 +159,5 @@ Google Apps Script 最短只能每一分鐘觸發一次
 
 而免費版Google帳號只提供1小時
 
-所以我才會請你申請Gsuite
+所以才會請你申請Gsuite
 
