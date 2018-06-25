@@ -31,12 +31,12 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Gsuite.png)
 
-### • Line 提醒畫面
-
+• Line 提醒畫面
+-----------------
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_demo.jpg)
 
-### • Telegram 提醒畫面 & 利用指令/data即時查詢
-
+• Telegram 提醒畫面 & 利用指令/data即時查詢
+---------------------------------------------
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TGDemo_photo_2018-06-24_23-06-01.jpg)
 
 P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影片](https://youtu.be/On9yeMtG2Wg)
