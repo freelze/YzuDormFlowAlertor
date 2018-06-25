@@ -94,7 +94,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/2.png)
 
-貼上 M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV 後
+貼上 *M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV* 後
 
 按下"新增"
 
