@@ -80,13 +80,13 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ### 修改第5行~第7行
 
-請更改引號''裡面的文字，''請不要刪除
+請更改引號`''`裡面的文字，`''`請不要刪除
 
-> 第5行 : 你的元智Portal帳號
+> 第5行 : 你的元智Portal`帳號`
 
-> 第6行 : 你的元智Portal密碼
+> 第6行 : 你的元智Portal`密碼`
 
-> 第7行 : 第一步取得的 LINE權杖token
+> 第7行 : 第一步取得的 `LINE權杖token`
 
 ### 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
 
@@ -94,19 +94,19 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/2.png)
 
-貼上 `M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV` 後
+在新增函式庫貼上 `M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV` 後
 
 按下`新增`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/3.png)
 
-選擇`版本`7後,按下`儲存`
+選擇`版本`7 後 -> 按下`儲存`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/4.png)
 
 ### 開啟Drive API
 
-`資源` -> `進階Google服務` -> 開啟`Drive API`
+`資源` -> `進階Google服務` -> 開啟`Drive API` -> `確定`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/resouce_googleServie.png)
 
@@ -137,6 +137,8 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/List_triggers.png)
 
 如果有那就大功告成囉!
+
+
 
 
 ## 給進階使用者 
