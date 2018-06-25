@@ -23,7 +23,7 @@
 
 登入你的YZU Portal，
 
-點選 `G Suite帳號申請`，
+點選 `G Suite 帳號申請`，
 
 並依說明申請，
 
