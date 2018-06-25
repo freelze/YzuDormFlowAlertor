@@ -145,4 +145,4 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 可以使用這個 [非線上版](https://gist.github.com/freelze/8727a16f020baf98fd6ab02cc9c23731)
 
-每兩秒抓一次流量
+每兩秒顯示一次流量
