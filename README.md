@@ -82,11 +82,11 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 請更改引號`''`裡面的文字，`''`請不要刪除
 
-  > <strong>第5行 : 你的元智Portal`帳號`<strong>
+  > <strong>第 5 行 : 你的元智Portal`帳號`
 
-  > 第6行 : 你的元智Portal`密碼`
+  > 第 6 行 : 你的元智Portal`密碼`
 
-  > 第7行 : 第一步取得的 `LINE權杖token`
+  > 第 7 行 : 第一步取得的 `LINE權杖token`<strong>
   
 ### • 更改檔案名稱
 
