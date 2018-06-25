@@ -3,7 +3,7 @@
 
 不需要安裝任何東西，
 
-只需要一個 Google Gsuite等級的帳號 和 Line的帳號(或是Telegram)，
+只需要一個 Google GSuite等級的帳號 和 Line的帳號(或是Telegram)，
 
 操作一點簡單的設定，
 
@@ -19,7 +19,7 @@
 
 它會自動停止。
 
-## 元智大學Gsuite帳號免費申請方式
+## 元智大學GSuite帳號免費申請方式
 
 登入你的YZU Portal，
 
@@ -151,7 +151,7 @@ Google Apps Script 最短只能每一分鐘觸發一次
 
 每兩秒顯示一次流量
 
-另外，Gsuite等級的帳號
+另外，GSuite等級的帳號
 
 觸發器(Triggers)的總執行時間每天限制6小時 ( [扣打 quotas](https://script.google.com/dashboard) )
 
@@ -159,5 +159,5 @@ Google Apps Script 最短只能每一分鐘觸發一次
 
 而免費版Google帳號只提供1小時
 
-所以才會請你申請Gsuite
+所以才會請你申請GSuite
 
