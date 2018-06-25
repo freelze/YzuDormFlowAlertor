@@ -31,7 +31,7 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Gsuite.png)
 
-<strong>Line 提醒畫面<strong>
+• Line 提醒畫面
 -----------------
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_demo.jpg)
 
@@ -90,13 +90,13 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ### 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
 
-點擊 資源 -> 程式庫
+點擊 `資源` -> `程式庫`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/2.png)
 
 貼上 `M1lugvAXKKtUxn_vdAG9JZleS6DrsjUUV` 後
 
-按下"新增"
+按下`新增`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/3.png)
 
@@ -106,7 +106,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ### 開啟Drive API
 
-資源 -> 進階Google服務 -> 開啟Drive API
+`資源` -> `進階Google服務` -> 開啟`Drive API`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/resouce_googleServie.png)
 
@@ -118,21 +118,21 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Start.png)
 
-它這時會出現「需要授權」訊息，點選【核對權限】
+它這時會出現「需要授權」訊息，點選`核對權限`
 
-接著點自己的Google帳號 -> 點選【允許】
+接著點自己的Google帳號 -> 點選`允許`
 
-再來讓它跑1.5~2分鐘
+再來讓它跑1~2分鐘
 
 正在執行的小視窗不見後
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/%E6%AD%A3%E5%9C%A8%E5%9F%B7%E8%A1%8C.png)
 
-點擊畫面上方的小時鐘
+點擊畫面上方的`小時鐘`
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Scheduler.png)
 
-查看是否有出現下面4個觸發器
+查看是否有出現下面`4`個觸發器
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/List_triggers.png)
 
@@ -153,7 +153,7 @@ Google Apps Script 最短只能每一分鐘觸發一次
 
 每天觸發器(Triggers)的總執行時間限制6小時 ( [扣打 quotas](https://script.google.com/dashboard) )
 
-這個程式一天大概會用到1小時12分鐘 \[ 計算方式: 4(sec) x 60 x 18 = 4320(sec) = 72(min) = 1h,12min ]
+這個程式一天大概會用到1小時12分鐘 `計算方式: 4(sec) x 60 x 18 = 4320(sec) = 72(min) = 1h,12min`
 
 而免費版Google帳號只提供1小時
 
