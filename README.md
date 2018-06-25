@@ -2,7 +2,7 @@
 
 不需要安裝任何東西，
 
-只需要一個 [Google Gsuite等級的帳號](### 元智大學Gsuite免費申請方式)和 Line的帳號(或是Telegram)，
+只需要一個 [Google Gsuite等級的帳號](https://github.com/freelze/YzuDormFlowAlertor/blob/master/README.md#%E5%85%83%E6%99%BA%E5%A4%A7%E5%AD%B8gsuite%E5%85%8D%E8%B2%BB%E7%94%B3%E8%AB%8B%E6%96%B9%E5%BC%8F)和 Line的帳號(或是Telegram)，
 
 操作一點簡單的設定，
 
