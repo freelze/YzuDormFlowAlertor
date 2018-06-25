@@ -141,8 +141,21 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 ## 給進階使用者 
 
+Google Apps Script 最短只能每一分鐘觸發一次
+
 如果你有安裝Python
 
 可以使用這個 [非線上版](https://gist.github.com/freelze/8727a16f020baf98fd6ab02cc9c23731)
 
 每兩秒顯示一次流量
+
+另外，Gsuite等級的帳號
+
+每天觸發器(Triggers)的總執行時間限制6小時 ( [扣打](https://script.google.com/dashboard) )
+
+這個程式一天大概會用到1小時12分鐘 ( 4(sec)*60*18 = 4320(sec) = 72(min) = 1h,12min )
+
+而免費版Google帳號只提供1小時
+
+所以我才會請你申請Gsuite
+
