@@ -87,6 +87,16 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
   > 第6行 : 你的元智Portal`密碼`
 
   > 第7行 : 第一步取得的 `LINE權杖token`
+  
+### 更改檔案名稱
+
+`檔案` -> ` 重新命名 `
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/rename.png)
+
+隨便取個名字 -> 確定
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/name.png)
 
 ### 匯入程式庫 ( author : [Ivan Kutil](https://www.kutil.org/2016/01/easy-data-scrapping-with-google-apps.html) )
 
