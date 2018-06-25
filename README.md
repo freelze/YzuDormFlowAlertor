@@ -2,7 +2,7 @@
 
 不需要安裝任何東西，
 
-只需要一個 Google帳號 和 Line的帳號(或是Telegram)，
+只需要一個 [Google Gsuite等級的帳號](### 元智大學Gsuite免費申請方式)和 Line的帳號(或是Telegram)，
 
 操作一點簡單的設定，
 
@@ -17,6 +17,18 @@
 也不需要做任何處理，
 
 它會自動停止。
+
+### 元智大學Gsuite免費申請方式
+
+登入你的YZU Portal，
+
+點選 "GSuite帳號申請"，
+
+並依說明申請，
+
+這樣你就有無限的雲端空間和更好的服務。
+
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Gsuite.png)
 
 ### Line 提醒畫面
 
