@@ -23,7 +23,7 @@
 
 登入你的YZU Portal，
 
-點選 `GSuite帳號申請`，
+點選 `G Suite帳號申請`，
 
 並依說明申請，
 
@@ -31,7 +31,7 @@
 
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/Gsuite.png)
 
-*    Line 提醒畫面
+<strong>Line 提醒畫面<strong>
 -----------------
 ![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/LINE_demo.jpg)
 
