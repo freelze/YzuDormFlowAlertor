@@ -26,13 +26,13 @@ function Start()
       case(5):
       case(6):
       case(7):
-        Logger.log("DormNetdisconnected");
+        //Logger.log("DormNetdisconnected");
         dailyDataflowReminderTriggers();
         triggerFordeleteCertainTimeDrivenTriggers();
         resetCount_LineNotifyTriggers();
         break;
       default:
-        Logger.log("DormNetconnected");
+        //Logger.log("DormNetconnected");
         DataflowReminderTriggers();
         triggerFordeleteCertainTimeDrivenTriggers();
         resetCount_LineNotifyTriggers();
@@ -103,7 +103,7 @@ function scrapeDataflow(){
       upload:upload,
       total:total
     }
-    Logger.log(data);
+    //Logger.log(data);
     return data;
   }
   catch (err) {
@@ -125,7 +125,7 @@ function getRestTime(){
       case(5):
       case(6):
       case(7):
-        Logger.log("DormNetdisconnected");
+        //Logger.log("DormNetdisconnected");
         break;
       case(1):
         var min = 60-time.getMinutes();
