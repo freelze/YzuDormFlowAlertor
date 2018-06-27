@@ -113,7 +113,7 @@ function scrapeDataflow(){
   catch (err) {
   // 用於處理例外的陳述式
     Logger.log("Error: " + err);
-    killAllTriggers();
+    //killAllTriggers();
     return false;
   }
 }
