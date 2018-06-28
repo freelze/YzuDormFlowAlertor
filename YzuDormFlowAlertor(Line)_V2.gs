@@ -224,14 +224,14 @@ function DataflowReminderTriggers() {
   Sheet.getRange(2, 1).setValue(cID);
 }
 //////////////////////////////////////
-// 爬流量的Trigger的Trigger(定時:每天8AM)
+// 爬流量的Trigger的Trigger(定時:每天6AM)
 //////////////////////////////////////
 function dailyDataflowReminderTriggers() {
   // Trigger when the users execute this code
   var cID = ScriptApp.newTrigger('DataflowReminderTriggers')
       .timeBased()
       .inTimezone("Asia/Taipei") // http://joda-time.sourceforge.net/timezones.html
-      .atHour(8)
+      .atHour(6)
       .everyDays(1)
       .create();
 }
