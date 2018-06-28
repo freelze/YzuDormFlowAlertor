@@ -70,7 +70,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 再把上面所有程式碼刪除
 
-複製貼上[YzuDormFlowAlertor(Line)_V2.gs](/YzuDormFlowAlertor(Line)_V2.gs)的程式碼
+兩點斷網的，請複製貼上[YzuDormFlowAlertor(Line)_V2.gs](/YzuDormFlowAlertor(Line)_V2.gs)的程式碼
 
 ### • 修改第5行~第7行
 
