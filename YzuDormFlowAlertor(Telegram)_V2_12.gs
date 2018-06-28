@@ -23,6 +23,8 @@ function Start()
     var time = new Date();
     switch(time.getHours())
     {
+      case(0):
+      case(1):
       case(2):
       case(3):
       case(4):
