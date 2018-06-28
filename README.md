@@ -138,7 +138,7 @@ P.S. Telegram 目前沒有教學文，有興趣請參考[永格天的教學影�
 
 查看是否有出現下面`4`個觸發器
 
-![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/List_triggers.png)
+![image](https://raw.githubusercontent.com/freelze/YzuDormFlowAlertor/master/Pictures/TriggersList_2.png)
 
 如果有那就大功告成囉!
 
