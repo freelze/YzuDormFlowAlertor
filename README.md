@@ -15,7 +15,7 @@
 
 ## 元智大學GSuite帳號免費申請方式
 
-登入你的YZU Portal，
+登入你的[YZU Portal](https://portalx.yzu.edu.tw/PortalSocialVB/Login.aspx)，
 
 點選 `G Suite 帳號申請`，
 
