@@ -206,12 +206,13 @@ function DataflowReminderTriggers() {
   var cID = ScriptApp.newTrigger('DataflowReminder')
       .timeBased()
       .everyMinutes(1)
-      .create();
+      .create()
+      .getUniqueId();
   // store certain triggerID
-  var allTriggers = ScriptApp.getProjectTriggers();
+  /*var allTriggers = ScriptApp.getProjectTriggers();
   for(var i = 0; i < allTriggers.length; i++) {
     var cID = allTriggers[i].getUniqueId();
-  }
+  }*/
   var SpreadSheet = SpreadsheetApp.openById(openSpreadsheetByName());
   var Sheet = SpreadSheet.getSheetByName("工作表1");
   Sheet.getRange(2, 1).setValue(cID);
