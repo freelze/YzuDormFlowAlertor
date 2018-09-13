@@ -150,13 +150,15 @@ function getRestTime(){
 function DataflowReminder() {
   var Dataflow_dict = scrapeDataflow();
   
+  var SpreadSheet = SpreadsheetApp.openById(openSpreadsheetByName());
+  var Sheet = SpreadSheet.getSheetByName("工作表1");
+  
   if(Dataflow_dict){
   var Dataflow_M = Dataflow_dict.total;
   var upload = Dataflow_dict.upload;
   var download = Dataflow_dict.download;
   var available = 4096-parseInt(Dataflow_M);
-  var SpreadSheet = SpreadsheetApp.openById(openSpreadsheetByName());
-  var Sheet = SpreadSheet.getSheetByName("工作表1");
+  
   if(Sheet.getRange(1, 1).isBlank())
     Sheet.getRange(1, 1).setValue(0);
   var count_LineNotify = Sheet.getRange(1, 1).getValue();
@@ -184,6 +186,10 @@ function DataflowReminder() {
     Sheet.getRange(1, 1).setValue(4);
   }
   } 
+  else{
+    Sheet.getRange(1, 2).setValue(1);
+    deleteCertainTimeDrivenTriggers()
+  }
 }
 ///////////////////
 // 刪除所有Triggers
@@ -253,16 +259,17 @@ function deleteCertainTimeDrivenTriggers() {
   var SpreadSheet = SpreadsheetApp.openById(openSpreadsheetByName());
   var Sheet = SpreadSheet.getSheetByName("工作表1");
   var cID = Sheet.getRange(2,1).getValue();
-  var cID2 = Sheet.getRange(3,1).getValue();
+  //var cID2 = Sheet.getRange(3,1).getValue();
   // Loop over all triggers
   var allTriggers = ScriptApp.getProjectTriggers();
   for (var i = 0; i < allTriggers.length; i++) {
     if (allTriggers[i].getUniqueId() == cID) {
       ScriptApp.deleteTrigger(allTriggers[i]);
+      break;
     }
-    if (allTriggers[i].getUniqueId() == cID2) {
+    /*if (allTriggers[i].getUniqueId() == cID2) {
       ScriptApp.deleteTrigger(allTriggers[i]);
-    }
+    }*/
   }
 }
 ///////////////////////////////////////////////
