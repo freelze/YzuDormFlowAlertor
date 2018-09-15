@@ -231,7 +231,7 @@ function dailyDataflowReminderTriggers() {
   var cID = ScriptApp.newTrigger('DataflowReminderTriggers')
       .timeBased()
       .inTimezone("Asia/Taipei") // http://joda-time.sourceforge.net/timezones.html
-      .atHour(6)
+      .atHour(7)
       .everyDays(1)
       .create();
 }
